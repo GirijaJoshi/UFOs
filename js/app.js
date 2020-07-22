@@ -45,26 +45,3 @@ function handleClick() {
     // just be the original tableData.
     buildTable(filteredData);
 };
-
-/*
-// this function is to print row, key and values of a dictionary
-function buildTable1(data) {
-    data.forEach((dataRow) => {
-        console.log("----------------------------------------------");
-        console.log(dataRow);
-        console.log("----------------------------------------------");
-        console.log(" ");
-        // each value
-        Object.values(dataRow).forEach((val) => {
-            console.log(val);
-            }
-        );
-        // each key
-        console.log("================================================");
-        Object.keys(dataRow).forEach((val) => {
-            console.log(val);
-            }
-        );
-    });
-}
-*/
