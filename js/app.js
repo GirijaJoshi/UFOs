@@ -36,6 +36,11 @@ function updateFilters() {
     let country = d3.select("#country").property("value");
     let shape = d3.select("#shape").property("value");
     
+    city = city.toLowerCase();
+    state = state.toLowerCase();
+    country = country.toLowerCase();
+    shape = shape.toLowerCase();
+    
     // If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object
     if(date) { filters['datetime'] = date; } 
