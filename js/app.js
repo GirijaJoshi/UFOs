@@ -40,7 +40,7 @@ function updateFilters() {
     state = state.toLowerCase();
     country = country.toLowerCase();
     shape = shape.toLowerCase();
-    
+
     // If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object
     if(date) { filters['datetime'] = date; } 
@@ -81,6 +81,8 @@ function filterTable() {
   }
 
 // Attach an event to listen for the form button
+// d3.selectAll("#filter-btn").on("click", updateFilters);
+d3.selectAll("input").on("change", updateFilters);
 d3.selectAll("#filter-btn").on("click", updateFilters);
   
 // Build the table when the page loads
